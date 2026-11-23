@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: attendance-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hr_attendance
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+      show-sql: true
+server:
+  port: 8083
